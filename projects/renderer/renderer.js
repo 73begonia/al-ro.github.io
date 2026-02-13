@@ -60,6 +60,7 @@ models.set("Multiple UVs", "./gltf/multiUVTest/MultiUVTest.gltf");
 models.set("Interpolation Test", "./gltf/interpolation/InterpolationTest.gltf");
 models.set("Sparse Accessor", "./gltf/sparse/SimpleSparseAccessor.gltf");
 models.set("Boombox", "./gltf/boombox/BoomBox.gltf");
+models.set("Cornell Box", "./gltf/cornellBox/CornellBox.gltf");
 models.set("Sponza", "./gltf/sponza/Sponza.gltf");
 models.set("Damaged Helmet", "./gltf/helmet/DamagedHelmet.gltf");
 models.set("Toy Car", "./gltf/toycar/ToyCar.gltf");
