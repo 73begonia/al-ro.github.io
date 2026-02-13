@@ -6,7 +6,7 @@
   "scene": 0,
   "scenes": [
     {
-      "nodes": [0, 1, 2, 3, 4]
+      "nodes": [0, 1, 2, 3, 4, 5, 6]
     }
   ],
   "nodes": [
@@ -29,6 +29,14 @@
     {
       "name": "RightWall",
       "mesh": 4
+    },
+    {
+      "name": "Box",
+      "mesh": 5
+    },
+    {
+      "name": "Sphere",
+      "mesh": 6
     }
   ],
   "meshes": [
@@ -96,6 +104,32 @@
           "material": 2
         }
       ]
+    },
+    {
+      "name": "Box",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16
+          },
+          "indices": 17,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Sphere",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 18,
+            "NORMAL": 19
+          },
+          "indices": 20,
+          "material": 3
+        }
+      ]
     }
   ],
   "materials": [
@@ -121,6 +155,14 @@
         "baseColorFactor": [0.1, 0.9, 0.1, 1.0],
         "metallicFactor": 0.0,
         "roughnessFactor": 1.0
+      }
+    },
+    {
+      "name": "Metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.9, 0.9, 0.9, 1.0],
+        "metallicFactor": 1.0,
+        "roughnessFactor": 0.2
       }
     }
   ],
@@ -224,6 +266,46 @@
       "componentType": 5123,
       "count": 6,
       "type": "SCALAR"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [-0.25, -0.7, 0.05],
+      "max": [0.25, -0.1, 0.55]
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 561,
+      "type": "VEC3",
+      "min": [0.1, -0.25, -0.6],
+      "max": [0.6, 0.25, -0.1]
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5126,
+      "count": 561,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 20,
+      "componentType": 5123,
+      "count": 3072,
+      "type": "SCALAR"
     }
   ],
   "bufferViews": [
@@ -316,12 +398,48 @@
       "byteOffset": 528,
       "byteLength": 12,
       "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 540,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 828,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1116,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1188,
+      "byteLength": 6732,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7920,
+      "byteLength": 6732,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14652,
+      "byteLength": 6144,
+      "target": 34963
     }
   ],
   "buffers": [
     {
       "uri": "CornellBox.bin",
-      "byteLength": 540
+      "byteLength": 20796
     }
   ]
 }
